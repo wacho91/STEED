@@ -308,4 +308,87 @@ nav {
 }
 
 .shop__card div > span {
-  color: var(--text-light)
+  color: var(--text-light);
+}
+
+.about {
+  overflow: hidden;
+}
+
+.about__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.about__image {
+  position: relative;
+  isolation: isolate;
+}
+
+.about__image::before {
+  position: absolute;
+  content: "ABOUT US";
+  top: 0;
+  right: 0;
+  color: var(--white);
+  font-size: 15rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  white-space: nowrap;
+  line-height: 15rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--white)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.about__image::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to top, var(--background-color), #ffffff00);
+  z-index: 1;
+}
+
+.about__image img {
+  max-width: 525px;
+  margin-inline: auto;
+}
+
+.about__content .section__header {
+  margin-bottom: 1rem;
+}
+
+.about__content .section__description {
+  margin-bottom: 1rem;
+}
+
+.about__stats {
+  max-width: 350px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__stats h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: var(--primary-color);
+}
+
+.about__stats p {
+  font-size: 1rem;
+  font-family: var(--header-font);
+  color: var(--text-light);
+}
