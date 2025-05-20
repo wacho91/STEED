@@ -392,3 +392,79 @@ nav {
   font-family: var(--header-font);
   color: var(--text-light);
 }
+
+.choose__container {
+  max-width: 1500px;
+}
+
+.choose__header {
+  margin-bottom: 4rem;
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.choose__header .section__header {
+  text-align: center;
+}
+
+.choose__header p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.swiper-slide {
+  width: 100%;
+  max-width: max-content;
+}
+
+.choose__card {
+  display: flex;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.choose__card__content {
+  position: relative;
+  isolation: isolate;
+  min-width: 175px;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+}
+
+.choose__card__content p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--background-color);
+}
+
+.choose__card__content a {
+  color: var(--background-color);
+}
+
+.choose__card__content h4 {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--background-color);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.choose__card img {
+  max-width: 500px;
+}
+
+.banner__container {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
