@@ -806,3 +806,18 @@ nav {
     flex-direction: row;
   }
 }
+
+@media (width > 1024px) {
+  .nav__links {
+    gap: 3rem;
+  }
+
+  .shop__container {
+    gap: 1.5rem;
+  }
+
+  .shop__card {
+    padding: 2rem;
+  }
+
+}
