@@ -623,3 +623,17 @@ nav {
 .footer__socials a:hover {
   color: var(--white);
 }
+
+@media (width > 540px) {
+  .shop__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner__container img {
+    opacity: 1;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
